@@ -128,6 +128,17 @@ define Device/xiaomi_rm1800
 endef
 TARGET_DEVICES += xiaomi_rm1800
 
+define Device/redmi_ra67
+	$(call Device/FitImage)
+	$(call Device/UbiFit)
+	BLOCKSIZE := 128k
+	PAGESIZE := 2048
+	DEVICE_DTS := qcom-ipq6018-ra67
+	DEVICE_DTS_CONFIG := config@cp03-c1
+	DEVICE_TITLE := Redmi RA67
+endef
+TARGET_DEVICES += redmi_ra67
+
 define Device/zn_m2
 	$(call Device/FitImage)
 	$(call Device/UbiFit)
