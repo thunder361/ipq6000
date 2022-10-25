@@ -12,8 +12,8 @@
 / {
 	#address-cells = <0x2>;
 	#size-cells = <0x2>;
-	model = "Xiaomi Router RM1800";
-	compatible = "xiaomi,rm1800", "qcom,ipq6018";
+	model = "Redmi Router RA67";
+	compatible = "redmi,ra67", "qcom,ipq6018";
 	interrupt-parent = <&intc>;
 	qcom,msm-id = <0x192 0x0>;
 
@@ -160,22 +160,22 @@
 		pinctrl-names = "default";
 
 		led_blue: system-blue {
-			label = "rm1800:blue:system";
+			label = "ra67:blue:system";
 			gpios = <&tlmm 29 GPIO_ACTIVE_HIGH>;
 		};
 
 		led_yellow: system-yellow {
-			label = "rm1800:yellow:system";
+			label = "ra67:yellow:system";
 			gpios = <&tlmm 30 GPIO_ACTIVE_HIGH>;
 		};
 
 		network-blue {
-			label = "rm1800:blue:network";
+			label = "ra67:blue:network";
 			gpios = <&tlmm 31 GPIO_ACTIVE_HIGH>;
 		};
 
 		network-yellow {
-			label = "rm1800:yellow:network";
+			label = "ra67:yellow:network";
 			gpios = <&tlmm 32 GPIO_ACTIVE_HIGH>;
 		};
 	};
